@@ -1,0 +1,1 @@
+Dear [[name]],The data has been imported by [[creator_name]] ([[creator_role]]) on [[created_time]]. Operis can be accessed at [[link]]. Warmest Regards,Friendly Operis Mailer

@@ -1,0 +1,58 @@
+#actb_tat_table {
+	border: 1px solid #353535;
+	width: 250px;
+	background-color: #e9ccff;
+	font: normal 11px/1.5 "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, sans-serif;
+}
+#actb_tat_table tr td strong {
+	font-family: "Century Gothic", sans-serif;
+	font-size: 1.3em !important;
+}
+#actb_tat_table tr td strong small {
+	font-family: Helvetica, Arial;
+	font-size: 0.9em !important;
+	font-weight: normal;
+}
+#actb_tat_table tr.actb_row {
+	background-color: #F3E5FF;
+	color: #000;
+}
+#actb_tat_table tr.actb_row_selected {
+	background-color: #A2D8E8;
+}
+#actb_tat_table tr td.actb_cell {
+	border: 1px solid #353535;
+	font-family: Helvetica, Verdana, sans-serif;
+	padding: 5px;
+}
+#actb_tat_table tr.actb_row_category {
+	font-family: Helvetica, Verdana, sans-serif;
+	color: white;
+	font-size: 0.9em;
+	background-color:#247;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+#actb_tat_table tr.actb_row_category td {
+	padding: 5px;
+}
+#actb_tat_table tr.actb_row_selected td.actb_cell {
+	border: 1px solid #247;
+}
+#actb_tat_table tr td.actb_cell_arrow {
+	font-family: Helvetica, Verdana, sans-serif;
+	text-align: center;
+	background-color: #FF3288;
+}
+#actb_tat_table tr td font.actb_match {
+	font-weight:bold;
+	/*background-color: #;*/
+	color: #FF3288;
+}
+
+#actb_tat_table span.actb_item {
+	display:block; vertical-align:middle
+}
+#actb_tat_table span.actb_item img {
+	height: 16px;
+}

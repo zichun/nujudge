@@ -1,0 +1,1 @@
+Dear [[name]],The data has been imported by [[creator_name]] ([[creator_role]]) on [[created_time]], and has to be vetted.Please access Operis at [[link]] to vet the data.Thank you.Warmest Regards,Friendly Operis Mailer

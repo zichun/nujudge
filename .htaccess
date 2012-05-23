@@ -1,0 +1,29 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+IndexIgnore *
+
+RewriteBase /nujudge
+
+RewriteRule $^                   		                        web/ [R,L]
+
+RewriteRule ^inc\?(.*)$										error/404 [R,L]
+
+RewriteRule ^([a-zA-Z0-9_\-]+)\.php$                                    $1.php [L]
+
+RewriteCond $1 !=r
+RewriteRule ^([a-zA-Z0-9_\-]+)$													$1/ [R,L]
+
+RewriteCond $1 !=r
+RewriteRule ^([a-zA-Z0-9_\-]+)/$					index.php?controller=$1&action=default [QSA,L]
+
+RewriteCond $1 !=r
+RewriteRule ^([a-zA-Z0-9_\-]+)/ajax/([a-zA-Z0-9_\-]+)/?$					index.php?controller=$1&action=$2&ajax=1 [L]
+RewriteRule ^([a-zA-Z0-9_\-]+)/ajax/([a-zA-Z0-9_\-]+)/(.*)?$			index.php?controller=$1&action=$2&ajax=1&param=$3 [L]
+
+RewriteCond $1 !=r
+RewriteRule ^([a-zA-Z0-9_\-]+)/([a-zA-Z0-9_\-]+)$							$1/$2/ [QSA,R,L]
+
+
+RewriteCond $1 !=r
+RewriteRule ^([a-zA-Z0-9_\-]+)/([a-zA-Z0-9_\-]+)/(.*)$						index.php?controller=$1&action=$2&param=$3 [QSA,L]
